@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accueil.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Welcom Center</title>
+</head>
+
+<body>
+
+    <section class="bopou">
+        <div class="logo">
+            <img src="IMG/logo.png" alt="" height="50px">
+        </div>
+        <div class="buttonZZZZ"></div>
+        <ul class="menuZZZZ">
+            <li><a href="#nosServices">Nos services</a></li>
+            <li><a href="quiSommesNous.html">Qui sommes nous?</a></li>
+            <li><a href="">Questions fréquentes</a></li>
+            <li><a href="#contactez">Contact</a></li>
+        </ul>
+
+        <script>
+            var button = document.querySelector('.buttonZZZZ');
+            var menu = document.querySelector('.menuZZZZ');
+
+            button.onclick = function () {
+                button.classList.toggle('active')
+                menu.classList.toggle('active')
+            }
+        </script>
+    </section>
+
+
+
+    <section class="hero">
+        <div class="overlay">
+            <h1>Welcom Center</h1>
+            <p>Conseil professionnel aux entreprises</p>
+            <p>La solution à tous vos besoins</p>
+            <p>Faites nous confiance et nous apportons des solutions à vos problèmes</p>
+            <div>
+                <a href="#services"><button class="cta">
+                        <a href="#nosServices"><span>Nos Services</span></a>
+                        <svg width="15px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                        <a href="#contactez"><button class="buttonAAA">Contactez-Nous</button></a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="header">
+        <h1>Nos valeurs</h1>
+    </div>
+    <section class="valeur">
+        <div class="container">
+            <div class="values">
+                <div class="value">
+                    <h3>Innovation
+                        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                        <lord-icon src="https://cdn.lordicon.com/ofcynlwa.json" trigger="hover"
+                            colors="primary:#121131,secondary:#f24c00,tertiary:#f28ba8,quaternary:#c69cf4"
+                            style="width:50px;height:50px">
+                        </lord-icon>
+                    </h3>
+                    <p>Nous utilisons les dernières technologies pour offrir des solutions innovantes et efficientes</p>
+                </div>
+                <div class="value">
+                    <h3>Compétitivité
+                        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                        <lord-icon src="https://cdn.lordicon.com/jtiihjyw.json" trigger="in" delay="1500"
+                            state="in-reveal" colors="primary:#000000,secondary:#eee966,tertiary:#b26836"
+                            style="width:50px;height:50px">
+                        </lord-icon>
+                    </h3>
+                    <p>Nous nous engageons à garantir des prix justes</p>
+                </div>
+                <div class="value">
+                    <h3>Engagement
+                        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                        <lord-icon src="https://cdn.lordicon.com/zfzufhzk.json" trigger="hover"
+                            colors="primary:#121131,secondary:#eee966,tertiary:#e5d1fa,quaternary:#f9c9c0,quinary:#e5d1fa"
+                            style="width:50px;height:50px">
+                        </lord-icon>
+                    </h3>
+                    <p>Nous nous engageons à comprendre et à satisfaire les besoins de nos clients</p>
+                </div>
+                <div class="value">
+                    <h3>Transparence</h3>
+                    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                    <lord-icon src="https://cdn.lordicon.com/kiynvdns.json" trigger="hover"
+                        colors="primary:#000000,secondary:#f28ba8,tertiary:#eee966,quaternary:#d4d1fa,quinary:#e5d1fa"
+                        style="width:50px;height:50px">
+                    </lord-icon>
+                    <p>Nous travaillons avec honneur et intégrité</p>
+                </div>
+                <div class="value">
+                    <h3>Excellence
+                        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                        <lord-icon src="https://cdn.lordicon.com/hgqdtxby.json" trigger="hover"
+                            colors="primary:#000000,secondary:#eee966,tertiary:#e5d1fa" style="width:50px;height:50px">
+                        </lord-icon>
+                    </h3>
+                    <p>Nous nous efforçons de fournir un service de la plus haute qualité</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="titress">
+        <div class="header">
+            <h1 id="nosServices">Nos Services</h1>
+        </div>
+        <section class="bodies">
+            <div class="container">
+                <div class="slide" style="
+                    background-image: url('IMG/WC5.jpg');
+                  ">
+                    <a href="teleprospection.html">
+                        <h1 class="shadow">Téléprospection</h1>
+                    </a>
+                </div>
+                <div class="slide" style="
+                    background-image: url('IMG/WC4.jpg');
+                  " id="#relationClient.html">
+                    <a href="relationClient.html">
+                        <h1 class="shadow">Relation client</h1>
+                    </a>
+                </div>
+                <div class="slide" style="background-image: url('IMG/WC1.jpg')" ;>
+                    <a href="accueilTelephonique.html">
+                        <h1 class="shadow">Accueil téléphonique</h1>
+                    </a>
+                </div>
+                <div class="slide active" style="
+                    background-image: url('IMG/WC2.jpg');
+                  ">
+                    <a href="sav.html">
+                        <h1 class="shadow">Service après-vente</h1>
+                    </a>
+                </div>
+                <div class="slide" style="
+                    background-image: url('IMG/WC6.jpg');
+                  ">
+                    <a href="supportTechnique.html">
+                        <h1 class="shadow">Support technique</h1>
+                    </a>
+                </div>
+                <div class="slide" style="
+                    background-image: url('IMG/WC3.jpg');
+                  ">
+                    <a href="recouvrementCreances.html">
+                        <h1 class="shadow">Recouvrement de créances</h1>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="header">
+        <h1 id="nosServices">Ils en parlent...</h1>
+    </div>
+    <section class="temoignage">
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p class="quote">“Nous avons confié notre prospection à Welcom Center et les résultats sont
+                    impressionnants. C’est un véritable soutien pour nos équipes commerciales qui peuvent se consacrer
+                    sur leur RDV plutôt que du phoning.”</p>
+                <div class="stars">★★★★★</div>
+                <p class="author">Jalil H.</p>
+            </div>
+            <div class="testimonial">
+                <p class="quote">“Grâce à leur service de téléprospection, Welcom Center avec nous, nous voyons une
+                    augmentation significative de nos leads qualifiés. Je recommande vivement d’autant plus que leurs
+                    tarifs sont très, très, très avantageux.”</p>
+                <div class="stars">★★★★★</div>
+                <p class="author">Sarah K.</p>
+            </div>
+            <div class="testimonial">
+                <p class="quote">“Welcom Center a transformé notre approche de la relation client. Leur équipe est
+                    professionnelle, réactive et proactive, et on apprécie aussi l’expérience des fondatrices qui
+                    connaissent clairement leur métier.”</p>
+                <div class="stars">★★★★★</div>
+                <p class="author">Hervé C.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="message" id="contactez">
+        <div class="containers">
+            <header class="headers">
+                <h1>Contactez <span class="highlight">- Nous</span></h1>
+                <p class="subtitle">Votre réussite est la notre.</p>
+            </header>
+
+            <main>
+                <section class="contact-form">
+                    <h2>Votre message</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nom" required>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Sujet" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Message..." required></textarea>
+                        </div>
+                        <a href="mailto:contact@welcomcenter.com"><button type="submit"
+                                class="buttons">Envoyer</button></a>
+                    </form>
+                </section>
+        </div>
+        <br>
+
+
+        <section>
+            <footer class="footer">
+                <div class="footer-section">
+                    <h3>Plus d'infos</h3>
+                    <img src="IMG/logo.png" alt="Logo">
+                    <p><a href="#">Mentions légales</a></p>
+                    <p><a href="#">Politiques de confidentialité</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Coordonnées</h3>
+                    <p>123 avenue Charles de Gaulle</p>
+                    <p>75001 Paris</p>
+                    <p>01 84 80 45 64</p>
+                    <p><a href="mailto:contact@welcomcenter.com">contact@welcomcenter.com</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Suivez-nous</h3>
+                    <p><a href="#"><img src="IMG/phone-call.png" alt="" class="logoFoot"> LinkedIn</a></p>
+                    <p><a href="#"><img src="IMG/twitter.png" alt="" class="logoFoot"> Twitter</a></p>
+                    <p><a href="#"><img src="IMG/instagramC.png" alt="" class="logoFoot"> Instagram</a></p>
+                    <p><a href="#"><img src="IMG/facebookC.png" alt="" class="logoFoot"> Facebook</a></p>
+                </div>
+            </footer>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Babacar Mbengue, tous droits réservés.</p>
+            </div>
+        </section>
+
+
+
+        <script src="welcom.js"></script>
+        <script src="testCard.js"></script>
+        <script src="bootstrap.min.js"></script>
+</body>
+
+</html>

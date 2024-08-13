@@ -1,0 +1,132 @@
+body {
+    background: linear-gradient(135deg, #F7F4FA 5%, #D7CBEB 34%, #D4C1F1 69%, #C5B0E7 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* NAVBAR */
+  
+  .navba {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: #d8b9f1;  Adjust this color to match your design */
+    padding: 5px 10px;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .logo img {
+    height: 40px;
+    /* margin-bottom: 40px; */
+  }
+  
+  .nav-item {
+    /* list-style: none;
+    display: flex; */
+    /* gap: 60px; */
+    /* margin-right: 5%; */
+  }
+  
+  .navbar-nav li {
+    position: relative;
+  }
+  
+  .navbar-nav li a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px;
+  }
+  
+  .navbar-nav li a:hover {
+    color: #6a0dad;
+    /* Adjust this color to match your design */
+    font-weight: bold;
+  }
+  
+  .navbar-nav li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #6a0dad;
+    /* Adjust this color to match your design */
+    transition: width .3s;
+  }
+  
+  .navbar-nav li a:hover::after {
+    width: 100%;
+  }
+
+
+  /* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    /*background-color: #d8b9f1;  Adjust this color to match your design */
+    padding: 20px 40px;
+    color: black;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+    /* Optional shadow for better visibility */
+  }
+  
+  .footer-section {
+    flex: -1;
+    margin-right: 20px;
+  }
+  
+  .footer-section h3 {
+    margin-top: 0;
+    text-decoration: underline;
+  }
+  
+  .footer-section p {
+    margin: 5px 0;
+  }
+  
+  .footer-section img {
+    height: 40px;
+    /* margin-bottom: 10px; */
+    margin-left: -8%;
+  }
+  
+  .footer-section a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .footer-section a:hover {
+    color: #6a0dad;
+    /* Adjust this color to match your design */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    border-top: 1px solid #c3c3c3;
+    background-color: #d19df7;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    color: black;
+    font-style: italic;
+  }
+  
+  .logoFoot {
+    height: 15px !important;
+    margin-left: 3% !important;
+  }
+  

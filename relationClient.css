@@ -1,0 +1,217 @@
+body {
+    background: linear-gradient(135deg, #F7F4FA 5%, #D7CBEB 34%, #D4C1F1 69%, #C5B0E7 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+.button {
+    position: relative;
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 50px;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    transform: scale(1.05);
+    color: #000;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button:active {
+    transform: scale(0.9);
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #007bff, #00bfff);
+    transition: all 0.85s ease-in-out;
+    z-index: -1;
+    border-radius: 50px;
+  }
+  
+  .button:hover::before {
+    right: 100%;
+  }
+
+
+  .photo {
+    opacity: 0.5;
+    width: 100%; /* The container takes full width of its parent */
+    overflow: hidden; /* Ensures that any excess part of the image is hidden */
+    position: relative;
+    /* max-width: 800px; Limite la taille maximale pour l'exemple */
+    margin: 0 auto; /* Centre le conteneur */
+  }
+
+  .photo img {
+    width: 100%; /* Image takes full width of the container */
+    height: 300px; /* Set a specific height for the image */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    display: block;
+}
+
+.hero {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* color: rgb(22, 1, 1); */
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, 0.5); Fond semi-transparent pour une meilleure lisibilité */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    margin: 0;
+    color: #000;
+    font-size: 4em;
+}
+
+.hero h2 {
+    margin: 10px 0 0;
+    font-size: 3em;
+    color: aliceblue;
+}
+
+
+/* NAVBAR */
+
+.navba {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: #d8b9f1;  Adjust this color to match your design */
+    padding: 5px 10px;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .logo img {
+    height: 40px;
+    /* margin-bottom: 40px; */
+  }
+  
+  .nav-item {
+    /* list-style: none;
+    display: flex; */
+    /* gap: 60px; */
+    /* margin-right: 5%; */
+  }
+  
+  .navbar-nav li {
+    position: relative;
+  }
+  
+  .navbar-nav li a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px;
+  }
+  
+  .navbar-nav li a:hover {
+    color: #6a0dad;
+    /* Adjust this color to match your design */
+    font-weight: bold;
+  }
+  
+  .navbar-nav li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #6a0dad;
+    /* Adjust this color to match your design */
+    transition: width .3s;
+  }
+  
+  .navbar-nav li a:hover::after {
+    width: 100%;
+  }
+
+  
+  /* FOOTER */
+
+  
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    /*background-color: #d8b9f1;  Adjust this color to match your design */
+    padding: 20px 40px;
+    color: black;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+    /* Optional shadow for better visibility */
+  }
+  
+  .footer-section {
+    flex: -1;
+    margin-right: 20px;
+  }
+  
+  .footer-section h3 {
+    margin-top: 0;
+    text-decoration: underline;
+  }
+  
+  .footer-section p {
+    margin: 5px 0;
+  }
+  
+  .footer-section img {
+    height: 40px;
+    /* margin-bottom: 10px; */
+    margin-left: -8%;
+  }
+  
+  .footer-section a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .footer-section a:hover {
+    color: #6a0dad;
+    /* Adjust this color to match your design */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    border-top: 1px solid #c3c3c3;
+    background-color: #d19df7;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    color: black;
+    font-style: italic;
+  }
+  
+  .logoFoot {
+    height: 15px !important;
+    margin-left: 3% !important;
+  }
+  

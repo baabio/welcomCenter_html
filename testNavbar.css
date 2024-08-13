@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('IMG/WC.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0 0 10px;
+    background-color: #fff;
+    opacity: 0.5;
+}
+
+.logo {
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+ ul li {
+    margin: 0 10px;
+ }
+
+ a {
+    text-decoration: 0;
+    color: #000;
+    padding: 10px 20px;
+    transition: 0.5s;
+    border-radius: 6px;
+ }
+
+ a:hover {
+    background-color: black;
+    color: white;
+ }
+
+@media screen and (max-width:1037px) {
+    body {
+        position: relative;
+    }  
+    header {
+        padding: 10px 20px;
+    }  
+    ul {
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(10px);
+        transition: 0.5s;
+    }
+    ul li {
+        margin: 20px 0;
+    }
+    ul li a {
+        text-transform: uppercase;
+    }
+    .button {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .button::after {
+        content: "";
+        position: absolute;
+        width: 35px;
+        height: 2px;
+        background-color: #000;
+        box-shadow: 0 10px 0 #000;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+    .button.active::after {
+        box-shadow: 0 0 0 #000;
+        transform: rotate(45deg);
+    }
+    .button::before {
+        content: "";
+        position: absolute;
+        width: 35px;
+        height: 2px;
+        background-color: #000;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+    .button.active::before {
+        box-shadow: 0 0 0 #000;
+        transform: rotate(-45deg);
+}
+    ul .active {
+        left: 0;
+    }
+}
