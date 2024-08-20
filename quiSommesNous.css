@@ -1,132 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 body {
-    background: linear-gradient(135deg, #F7F4FA 5%, #D7CBEB 34%, #D4C1F1 69%, #C5B0E7 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
+  background: linear-gradient(135deg, #F7F4FA 5%, #D7CBEB 34%, #D4C1F1 69%, #C5B0E7 100%);
+  /* min-height: 100vh; */
+  background-size: cover;
+  background-position: center;
+}
+
+.navBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #f0c5e9;
+  box-shadow: 0px 5px 10px rgba(0,0,0,.1);
+  padding: 0px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.navBar .navbar ul {
+  list-style: none;
+}
+
+.navBar .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.navBar .navbar ul li a {
+  font-size: 20px;
+  padding: 20px;
+  color: #333;
+  display: block;
+}
+
+.navBar .navbar ul li a:hover {
+  background: #333;
+  color: #fff;
+}
+
+.navBar .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 150px;
+  /* background: linear-gradient(135deg, #F7F4FA 5%, #D7CBEB 34%, #D4C1F1 69%, #C5B0E7 100%); */
+  background: #f0c5e9;
+  display: none;
+}
+
+.navBar .navbar ul li ul li {
+  width: 100%;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.navBar .navbar ul li ul li ul {
+  left: 200px;
+  top: 0;
+}
+
+.navBar .navbar ul li:focus-within > ul,
+.navBar .navbar ul li:hover > ul {
+  display: initial;
+}
+
+#menu-bar {
+  display: none;
+}
+
+.navBar label {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+
+@media(max-width:991px){
+  .navBar {
+      padding: 20px;
   }
-  
-  
-  /* NAVBAR */
-  
-  .navba {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /*background-color: #d8b9f1;  Adjust this color to match your design */
-    padding: 5px 10px;
+
+  .navBar label {
+      display: initial;
   }
-  
-  .navbar-nav {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+
+  .navBar .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: transparent;
+      border-top: 1px solid rgba(0,0,0,.1);
+      display: none;
   }
-  
-  .logo img {
-    height: 40px;
-    /* margin-bottom: 40px; */
+
+  .navBar .navbar ul li {
+      width: 100%;
   }
-  
-  .nav-item {
-    /* list-style: none;
-    display: flex; */
-    /* gap: 60px; */
-    /* margin-right: 5%; */
+
+  .navBar .navbar ul li ul {
+      position: relative;
+      width: 100%;
   }
-  
-  .navbar-nav li {
-    position: relative;
+
+  .navBar .navbar ul li ul li {
+      background: #eee;
   }
-  
-  .navbar-nav li a {
-    text-decoration: none;
-    color: black;
-    padding: 8px 12px;
+
+  .navBar .navbar ul li ul li ul{
+      width: 100%;
+      left: 0;
   }
-  
-  .navbar-nav li a:hover {
-    color: #6a0dad;
-    /* Adjust this color to match your design */
-    font-weight: bold;
+
+  #menu-bar:checked ~ .navbar {
+      display: initial;
   }
-  
-  .navbar-nav li a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #6a0dad;
-    /* Adjust this color to match your design */
-    transition: width .3s;
-  }
-  
-  .navbar-nav li a:hover::after {
-    width: 100%;
-  }
+}
 
 
   /* FOOTER */
 
 .footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    /*background-color: #d8b9f1;  Adjust this color to match your design */
-    padding: 20px 40px;
-    color: black;
-    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
-    /* Optional shadow for better visibility */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px 40px;
+  color: black;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-section {
+  flex: -1 1 20px; /* Flex-grow: 1, Flex-shrink: 1, Minimum width: 200px */
+  margin-right: 20px;
+  margin-bottom: 20px; /* Add margin at the bottom for spacing in stacked layout */
+}
+
+.footer-section h3 {
+  margin-top: 0;
+  text-decoration: underline;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+.footer-section img {
+  height: 40px;
+  margin-left: -8%;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-section a:hover {
+  color: #6a0dad;
+}
+
+.footer-bottom {
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  border-top: 1px solid #c3c3c3;
+  background-color: #d19df7;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: black;
+  font-style: italic;
+}
+
+.logoFoot {
+  height: 15px !important;
+  margin-left: 3% !important;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .footer {
+      flex-direction: column;
+      align-items: center;
   }
-  
+
   .footer-section {
-    flex: -1;
-    margin-right: 20px;
+      margin-right: 0;
+      text-align: center;
   }
-  
-  .footer-section h3 {
-    margin-top: 0;
-    text-decoration: underline;
-  }
-  
-  .footer-section p {
-    margin: 5px 0;
-  }
-  
+
   .footer-section img {
-    height: 40px;
-    /* margin-bottom: 10px; */
-    margin-left: -8%;
+      margin-left: 0;
   }
-  
-  .footer-section a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .footer-section a:hover {
-    color: #6a0dad;
-    /* Adjust this color to match your design */
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    width: 100%;
-    padding-top: 10px;
-    border-top: 1px solid #c3c3c3;
-    background-color: #d19df7;
-  }
-  
-  .footer-bottom p {
-    margin: 0;
-    color: black;
-    font-style: italic;
-  }
-  
+
   .logoFoot {
-    height: 15px !important;
-    margin-left: 3% !important;
+      margin-left: 0 !important;
   }
-  
+}
