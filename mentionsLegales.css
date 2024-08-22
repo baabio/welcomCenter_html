@@ -51,7 +51,8 @@ body {
     position: absolute;
     left: 0;
     width: 200px;
-    background: linear-gradient(135deg, #F7F4FA 5%, #D7CBEB 34%, #D4C1F1 69%, #C5B0E7 100%);
+    background: #f0c5e9;
+    opacity: 0.7;
     display: none;
 }
 
@@ -156,7 +157,7 @@ body {
     /* height: 100vh; */
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 13%;
+    margin-top: 7%;
   }
   
   
